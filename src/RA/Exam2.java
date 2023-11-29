@@ -34,7 +34,6 @@ public class Exam2 {
 
             switch (choice) {
                 case 1:
-                    // Nhập giá trị cho các phần tử trong mảng
                     System.out.println("Nhập giá trị cho các phần tử của mảng:");
                     for (int i = 0; i < arr.length; i++) {
                         for (int j = 0; j < arr[i].length; j++) {
@@ -44,7 +43,6 @@ public class Exam2 {
                     }
                     break;
                 case 2:
-                    // In giá trị các phần tử trong mảng theo ma trận
                     System.out.println("Giá trị các phần tử mảng theo ma trận:");
                     for (int i = 0; i < arr.length; i++) {
                         for (int j = 0; j < arr[i].length; j++) {
@@ -54,16 +52,15 @@ public class Exam2 {
                     }
                     break;
                 case 3:
-                    // Tính số lượng các phần tử chia hết cho 2 và 3 trong mảng
-                    int count = 0;
+                    int sum = 0;
                     for (int i = 0; i < rows; i++) {
                         for (int j = 0; j < cols; j++) {
                             if (arr[i][j] % 2 == 0 && arr[i][j] % 3 == 0) {
-                                count++;
+                                sum++;
                             }
                         }
                     }
-                    System.out.println("Số lượng phần tử chia hết cho 2 và 3 trong mảng là: " + count);
+                    System.out.println("Số phần tử chia hết cho 2 và 3 trong mảng là: " + sum);
                     break;
                 case 4:
                     int sum = 0;
