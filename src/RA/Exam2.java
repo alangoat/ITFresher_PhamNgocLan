@@ -52,15 +52,15 @@ public class Exam2 {
                     }
                     break;
                 case 3:
-                    int sum = 0;
+                    int count = 0;
                     for (int i = 0; i < rows; i++) {
                         for (int j = 0; j < cols; j++) {
                             if (arr[i][j] % 2 == 0 && arr[i][j] % 3 == 0) {
-                                sum++;
+                                count++;
                             }
                         }
                     }
-                    System.out.println("Số phần tử chia hết cho 2 và 3 trong mảng là: " + sum);
+                    System.out.println("Số phần tử chia hết cho 2 và 3 trong mảng là: " + count);
                     break;
                 case 4:
                     int sum = 0;
